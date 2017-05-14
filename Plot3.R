@@ -23,9 +23,8 @@ feb1and2$DayOfWeek <- weekdays(feb1and2$DateTime)
 
 png(filename = "plot3.png", width = 480, height = 480)
 
-plot(feb1and2$DateTime, feb1and2$Sub_metering_1, type = "n", main = "", xlab = "", ylab = "Energy Sub Metering")
+plot(feb1and2$DateTime, feb1and2$Sub_metering_1, type = "l", main = "", xlab = "", ylab = "Energy Sub Metering")
 
-lines(feb1and2$DateTime, feb1and2$Sub_metering_1, col = "black")
 lines(feb1and2$DateTime, feb1and2$Sub_metering_2, col = "red")
 lines(feb1and2$DateTime, feb1and2$Sub_metering_3, col = "blue")
 
